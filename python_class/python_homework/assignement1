@@ -1,6 +1,6 @@
-"""#Task 1: Hello Function 
+#Task 1: Hello Function 
 
-def hello():
+"""def hello():
     return "Hello"
 print(hello())
 
@@ -135,8 +135,8 @@ def hangman(secret, guess):
     return "".join(letter if letter in guess else "~" for letter in secret)
 
 print (hangman("alphabet", "ab"))
-print (hangman("tomandjerry", "qrstuv"))"
-"""
+print (hangman("tomandjerry", "qrstuv"))"""
+
 # Task 10: Pig Latin function, string manipulation exercise Pig latin is akid's trick language.
 def pig_latin(text):
     vowels = "aeiou"
