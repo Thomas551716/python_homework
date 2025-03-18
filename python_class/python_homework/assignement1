@@ -145,7 +145,7 @@ def pig_latin(text):
 
     for word in words:
         if word[0] in vowels:
-            pig_latin_word = word + "ay"
+            pig_latin_word = word + "ay"a
         elif word.startswith("qu"):
             pig_latin_word = word[2:] + "quay"
         else:
