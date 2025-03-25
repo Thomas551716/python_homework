@@ -1,11 +1,10 @@
 # Task 2. Read a CSV File(read_emplyee function)
 
 import datetime
-
+import csv
 from custom_module import some_function
 import os
 import sys
-import csv
 
 def read_employees():
     employees_data = {"fields": [], "rows":[]}
@@ -195,4 +194,3 @@ def write_sorted_list():
 # Call function
 write_sorted_list()
 print("Sorted minutes written to minutes.csv")
-print(datetime.__file__)
