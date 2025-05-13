@@ -1,0 +1,19 @@
+# which Section of the Wikipedia site are restricted for crawling?
+
+The robots.txt file for Wikipedia disallows crawling of specific path, such as :
+  Disallow: /w/
+  Disallow: /wiki/Special:
+  Disallow: /wiki/Talk:
+  Disallow: /wiki/User:
+
+            This means web crawlers are not allowed to access Wikipedia's internal or adminstrative pages, such as user discussions or Special system tools.
+
+  # are there specific rules forcertain user agents?
+
+  Yes, the robots.txt file specifies different rules for different user agents. For example, it has a section for User-agent: GPTBot that disallows access to 
+  all pages, and another for User-agent: Googlebot that allows broader access. This demonstrates that websites can tailor their access rules based on the identity of the crawler.
+
+  # Reflection on the purpose of robots.txt and ethical scraping
+
+The robots.txt file is a website’s way of communicating rules and boundaries to web crawlers. It promotes ethical scraping by making it clear which parts of a site are allowed or 
+disallowed for automated access. Respecting robots.txt ensures we don’t overload servers, violate privacy, or access content not meant for bots, which helps maintain a fair and respectful digital environment.

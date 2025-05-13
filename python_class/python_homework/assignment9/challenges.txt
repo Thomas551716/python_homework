@@ -1,0 +1,6 @@
+One challenge I faced was identifying the right XPath to isolate only the Top 10 vulnerabilities. 
+At first, many unrelated links were selected. I refined my XPath to only include links containing 
+"/www-project-top-ten/2021/" which filtered out unrelated items.Another challenge was making sure 
+the page was fully loaded before scraping. Adding a short delay with `time.sleep()` helped ensure 
+elements were present before Selenium tried to find them.Lastly, it took some trial and error to 
+format the output properly for saving into a CSV file. I used pandas to handle this easily.
