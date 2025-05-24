@@ -15,11 +15,11 @@ JOIN products p ON l.product_id = p.product_id
 GROUP BY e.employee_id;
 """
 # Load query results into a DataFrame
-employee_results = pd.read_sql_query(query, conn)
+df = pd.read_sql_query(query, conn)
 conn.close()
 
 # Plotting
-employee_results.plot(kind='bar', x='last_name', y='revenue', color='orange', legend=False)
+df.plot(kind='bar', x='last_name', y='revenue', color='skyblue', legend=False)
 plt.title('Revenue by Employee')
 plt.xlabel('Employee Last Name')
 plt.ylabel('Revenue ($)')
